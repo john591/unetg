@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg: #0b1019;
+  --color-surface: #131a26;
+  --color-text: #edf0f4;
+  --color-divider: color-mix(in srgb, #edf0f4 14%, transparent);
+  --color-accent: #1e5dab;
+  --color-accent-100: #edf3fb;
+  --color-accent-200: #d3e2f5;
+  --color-accent-300: #a9c6ea;
+  --color-accent-400: #6f9dd6;
+  --color-accent-500: #3a76c1;
+  --color-accent-600: #1a5096;
+  --color-accent-700: #16447f;
+  --color-accent-800: #113463;
+  --color-accent-900: #0c2546;
+  --font-heading: var(--font-barlow-condensed), "Barlow Condensed", system-ui, sans-serif;
+  --font-body: var(--font-barlow), "Barlow", system-ui, sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html { scroll-behavior: smooth; }
+html, body { overflow-x: clip; }
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  text-wrap: pretty;
+}
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 600; }
+a { color: var(--color-accent-400); }
+a:hover { color: var(--color-accent-300); }
+
+@keyframes unetgMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* Shared building blocks */
+@layer components {
+.wrap { max-width: 1440px; margin: 0 auto; padding-inline: clamp(20px, 4vw, 56px); }
+.reset { all: unset; box-sizing: border-box; cursor: pointer; }
+.hd { font-family: var(--font-heading); font-weight: 600; text-transform: uppercase; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--color-accent-400); }
+.muted { color: color-mix(in srgb, var(--color-text) 75%, transparent); }
+.h-section { margin: 0; font-size: clamp(36px, 4.4vw, 64px); line-height: .95; }
+.h-page { margin: 0; font-size: clamp(56px, 8vw, 128px); line-height: .9; }
+.body-lg { font-size: 18px; line-height: 30px; color: color-mix(in srgb, var(--color-text) 84%, transparent); }
+.btn-solid {
+  display: inline-flex; align-items: center; gap: 10px; align-self: flex-start;
+  background: var(--color-accent); color: var(--color-text);
+  font-family: var(--font-heading); font-weight: 600; font-size: 16px;
+  letter-spacing: .08em; text-transform: uppercase; padding: 14px 22px;
+}
+.btn-solid:hover { background: var(--color-accent-500); color: var(--color-text); }
+.link-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-heading); font-weight: 600; font-size: 16px;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.link-btn:hover, .hover-accent:hover { color: var(--color-accent-400); }
+.icon-btn {
+  width: 48px; height: 48px; display: grid; place-items: center;
+  border: 1px solid var(--color-divider);
+}
+.icon-btn:hover { border-color: var(--color-accent-400); color: var(--color-accent-400); }
+.tile-cta { border-bottom: 3px solid transparent; }
+.tile-cta:hover { border-bottom-color: var(--color-accent); }
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Forms */
+.field > label {
+  display: block; font-size: 12px; margin-bottom: 5px;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+}
+.input {
+  width: 100%; min-height: 36px; padding: 6px 10px; font: inherit; font-size: 14px;
+  color: var(--color-text); caret-color: var(--color-accent);
+  background: var(--color-surface); border: 1px solid var(--color-divider); border-radius: 0;
+}
+.input:hover { border-color: color-mix(in srgb, var(--color-text) 45%, transparent); }
+.input:focus-visible { border-color: var(--color-accent); outline: none; }
+select.input { background: var(--color-bg); }
+textarea.input { min-height: 90px; resize: vertical; }
 }

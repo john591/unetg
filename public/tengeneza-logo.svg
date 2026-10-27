@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Tengeneza">
+  <rect width="1024" height="1024" fill="#00a14b"/>
+  <path d="M241 203h542a28 28 0 0 1 28 28v131H213V231a28 28 0 0 1 28-28z" fill="#fff"/>
+  <rect x="406" y="362" width="212" height="458" fill="#2d2e2e"/>
+  <rect x="502" y="423" width="28" height="72" fill="#fff"/>
+  <rect x="502" y="696" width="28" height="72" fill="#fff"/>
+  <circle cx="512" cy="591" r="44" fill="#fbcc3c"/>
+</svg>
