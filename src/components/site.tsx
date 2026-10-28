@@ -451,7 +451,7 @@ function Home({ go, openSvc, contactAbout, carRef }: { go: (p: PageId) => void; 
   const Arrow = <Icon name="ArrowRight" size={16} />;
   return (
     <>
-      <section className="relative min-h-[560px] max-h-[960px] overflow-hidden bg-[var(--color-surface)]" style={{ height: "calc(100vh - 63px)" }}>
+      <section className="relative h-[min(560px,calc(100svh-63px))] min-h-[440px] overflow-hidden bg-[var(--color-surface)] sm:h-[calc(100vh-63px)] sm:min-h-[560px] sm:max-h-[960px]">
         <ImageSlot placeholder="City skyline connected by a digital network" img="hero" priority />
         <div className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(to top,var(--color-bg) 2%,color-mix(in srgb,var(--color-bg) 55%,transparent) 45%,color-mix(in srgb,var(--color-bg) 20%,transparent))" }} />
         <div className="pointer-events-none absolute inset-x-0 bottom-0">
