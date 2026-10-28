@@ -16,7 +16,7 @@ const barlowCondensed = Barlow_Condensed({
 
 export const metadata: Metadata = {
   title: "UNETG — Networking, Apps, Data & AI",
-  description: "Transform your network. Empower your business. IT and network solutions from UNETG in the USA and DRC.",
+  description: "Transform your network. Empower your business. IT and network solutions from UNETG (United Network Group) in the USA and DRC.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -281,7 +281,7 @@ export function Site() {
               <section className="grid gap-x-20 gap-y-10" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,420px),1fr))" }}>
                 <h2 className="h-section hd">Technology meets strategy and execution</h2>
                 <div className="body-lg flex flex-col gap-5">
-                  <p className="m-0">At UNETG, we are committed to transforming your network into a powerful asset that propels your business forward. We provide the foundation for seamless operations, secure data, and innovative services, enabling you to focus on what you do best—growing your business.</p>
+                  <p className="m-0">UNETG stands for United Network Group. We are committed to transforming your network into a powerful asset that propels your business forward. We provide the foundation for seamless operations, secure data, and innovative services, enabling you to focus on what you do best—growing your business.</p>
                   <p className="m-0">Join us in redefining what&apos;s possible for your business with network solutions that pave the way for a brighter, more connected future. Let&apos;s build the digital backbone your business deserves, together.</p>
                 </div>
               </section>
@@ -438,7 +438,7 @@ export function Site() {
           </div>
         </div>
         <div className="wrap flex flex-wrap justify-between gap-4 border-t border-[var(--color-divider)] pb-8 pt-5 text-[13px]" style={{ color: "color-mix(in srgb,var(--color-text) 60%,transparent)" }}>
-          <span>© 2026 UNETG // All rights reserved</span>
+          <span>© 2026 UNETG (United Network Group) // All rights reserved</span>
           <a href="#top" className="text-xs font-semibold uppercase tracking-[.1em]" style={{ color: "var(--color-text)" }}>Back to top ↑</a>
         </div>
       </footer>
@@ -470,6 +470,7 @@ function Home({ go, openSvc, contactAbout, carRef }: { go: (p: PageId) => void; 
       <section id="intro" className="wrap grid gap-x-20 gap-y-12 py-[clamp(72px,10vw,140px)] scroll-mt-16" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,420px),1fr))" }}>
         <div>
           <h2 className="hd m-0 text-[clamp(52px,7vw,112px)] leading-[.92]">We are<br />UNETG</h2>
+          <p className="hd mb-0 mt-4 text-[clamp(18px,1.8vw,24px)] tracking-[.14em] uppercase" style={{ color: "color-mix(in srgb,var(--color-text) 70%,transparent)" }}>United Network Group</p>
           <p className="hd mb-0 mt-5 text-[22px] tracking-[.06em] text-[var(--color-accent-400)]">Where technology meets strategy and execution</p>
         </div>
         <div className="body-lg flex flex-col gap-5 pt-2">
