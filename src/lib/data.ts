@@ -88,7 +88,7 @@ export const JOBS: Job[] = [
 ];
 export type PageId = "home" | "services" | "projects" | "about" | "careers" | "contact";
 export const PAGES: [PageId, string][] = [["home","Home"],["services","Services"],["projects","Projects"],["about","About"],["careers","Careers"],["contact","Contact"]];
-export const PARTNERS = ['Cisco','Microsoft','Juniper','VMware','Deloitte','KPMG','Meraki','Aruba','HPE','SolarWinds','Splunk','IBM','AWS','Google Cloud','Nokia','Ericsson','Ubiquiti','Zoom','Cabinet Nyamugabo'];
+export const PARTNERS = ['Cisco','Microsoft','Juniper','VMware','Deloitte','KPMG','Meraki','Aruba','HPE','SolarWinds','Splunk','IBM','AWS','Google Cloud','Nokia','Ericsson','Ubiquiti','Zoom'];
 export const OFFICES = [{ country: 'USA', phone: '+1 (513) 262-0639', tel: 'tel:+15132620639' }, { country: 'DRC', phone: '+243 988 777 258', tel: 'tel:+243988777258' }];
 export const WHY = [
   { icon: 'Award', title: 'Expertise and Experience', copy: 'With years of experience and a team of certified professionals, we possess the expertise required to navigate the complexities of modern IT infrastructure. Our strategic partnerships with tech giants further enhance our ability to deliver cutting-edge solutions.' },

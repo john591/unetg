@@ -529,7 +529,6 @@ function Home({ go, openSvc, contactAbout, carRef }: { go: (p: PageId) => void; 
           <h2 className="hd m-0 text-[clamp(64px,10vw,168px)] leading-[.85]">USA <span className="text-[var(--color-accent-400)]">+</span> DRC</h2>
           <div className="flex flex-col gap-[18px]">
             <p className="body-lg m-0">We leverage our partnerships with industry leaders like Cisco, Deloitte, KPMG, Microsoft, Juniper, and VMware to bring you the latest in technology and strategic thinking, ensuring your network is not just a platform for your business operations but a driver of innovation and growth.</p>
-            <p className="m-0 text-base leading-[26px]" style={{ color: "color-mix(in srgb,var(--color-text) 76%,transparent)" }}>In the DRC, UNETG also works with <a href="https://cabinetnyamugabo.com/" target="_blank" rel="noopener noreferrer">Cabinet Nyamugabo</a>, a Congolese law firm, across many areas, combining legal expertise with our technology solutions.</p>
             <div className="flex flex-wrap gap-8">
               {OFFICES.map((o) => (
                 <a key={o.country} href={o.tel} className="flex flex-col gap-0.5" style={{ color: "var(--color-text)" }}><span className="eyebrow">{o.country}</span><span className="text-base">{o.phone}</span></a>
